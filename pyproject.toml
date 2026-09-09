@@ -1,7 +1,7 @@
 [project]
 name = "solarphunk"
 version = "0.1.0"
-description = "Model-agnostic deep agent built on langchain-ai/deepagents"
+description = "AI + Solarpunk: build tools, machines, art, and inventions from discarded, donor, and natural materials"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [

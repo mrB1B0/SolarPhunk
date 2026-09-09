@@ -1,22 +1,38 @@
 # SolarPhunk
 
-A minimal, **model-agnostic** deep agent built on
-[`langchain-ai/deepagents`](https://github.com/langchain-ai/deepagents).
-Swapping between Claude, GPT, Gemini, or a self-hosted model is a change to
-`.env` — never to code.
+An open-source platform of projects that apply AI to Solarpunk-style work:
+hacking together entirely new **tools, machines, art projects, and inventions**
+from old, discarded, broken, donor, or natural materials. The core platform is a
+multi-player, agentic, self-healing, secure, and environmentally safe set of
+technology solutions, built around a set of core principles derived from the
+Solarpunk movement.
 
-## What's in the box
+## Project docs
+
+| Doc | What it covers |
+|---|---|
+| [docs/principles.md](docs/principles.md) | Core principles and the platform obligations they impose |
+| [docs/ideas.md](docs/ideas.md) | Seed ideas to prime the Ideator, plus the idea template |
+| [docs/agent-roles.md](docs/agent-roles.md) | Agentic worker roles and the propose / gate / platform trust model |
+| [docs/architecture.md](docs/architecture.md) | Target platform architecture, data model, and phased roadmap |
+
+Everything above is a **v0 draft** meant to be argued with.
+
+## Status
+
+Phase 0. This repo currently contains the **agent scaffold** — a model-agnostic
+`deepagents` runtime that the platform's worker roles will be built on:
 
 | Piece | File | Purpose |
 |---|---|---|
 | Model resolution | `solarphunk/config.py` | Reads `AGENT_MODEL` etc.; builds the primary model + optional fallback chain |
-| Tools | `solarphunk/tools.py` | `fetch_url`, `word_frequency` — replace with your own |
+| Tools | `solarphunk/tools.py` | `fetch_url`, `word_frequency` — placeholders for real agent tools |
 | Agent assembly | `solarphunk/agent.py` | Wires model + tools + a `summarizer` sub-agent + optional SQLite persistence |
 | CLI | `solarphunk/main.py` | `solarphunk "..."`, `--stream`, `--thread` |
 
-The deepagents layer adds the rest for free: a planning/todo tool, a virtual
-filesystem the agent reads and writes, sub-agent delegation with isolated
-context, and long-thread summarisation.
+Swapping between Claude, GPT, Gemini, or a self-hosted model is a change to
+`.env` — never to code. The deepagents layer supplies a planning tool, a virtual
+filesystem, sub-agent delegation, and long-thread summarisation.
 
 ## Setup
 
