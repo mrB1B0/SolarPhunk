@@ -13,7 +13,7 @@
 | 4 Appropriate, legible technology | Model-agnostic; prefer small/local inference; log compute and energy; every agent output carries its reasoning and sources. |
 | 5 Knowledge is a commons | Commons uses open, inspectable, exportable formats; content-addressed; license + provenance per contribution. |
 | 6 Nothing radical is out of reach | Build plans state cost / PPE / skill / time; accessibility gaps are surfaced in the review. |
-| 7 No chokepoints | Decentralized, offline-first, self-healing; append-only decision log; human checkpoint for irreversible actions; no vendor lock-in. |
+| 7 No chokepoints | Decentralized, offline-first, self-healing; append-only decision log; human checkpoint for irreversible actions; sandboxed least-privilege agents; no vendor lock-in. |
 
 ## Layers
 

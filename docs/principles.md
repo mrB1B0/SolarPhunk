@@ -28,9 +28,11 @@ Each principle is followed by **In the platform:** — the obligation it places 
 the software itself.
 
 ### 1. Hope, made real
-We build our way forward, we don't only write our way forward. The deliverable
-is a small thing that works, can be repaired, and can be shared — and it should
-be beautiful, because beauty is part of what makes a future worth wanting.
+Optimism is the work, not the mood. We refuse both the doom that says nothing
+can change and the sales pitch that says someone else will fix it. So we build:
+the unit of progress here is a real thing that works and is good to look at, not
+a manifesto or a roadmap. Beauty counts — it is part of what makes a future
+worth wanting.
 **In the platform:** every project ends in something reproducible — a bill of
 materials, a build plan, a photo of the finished thing — never a document that
 stops at intent.
@@ -51,7 +53,9 @@ disassembly and end-of-life paths.
 water, the air, the people around it — better than it found it. Safety and
 honest provenance are hard gates: nothing toxic, stolen, or extracted through
 exploitation gets through, and no claim of "green" or "circular" ships without
-evidence, including claims about this platform.
+evidence, including claims about this platform. Where something is untested,
+experimental, or not permitted under local law, we say so plainly rather than
+imply it is proven.
 **In the platform:** the hazard-and-lifecycle review and the provenance review
 sit in the critical path and can block; a blessed project carries signed review
 artifacts and links every environmental claim to its data.
@@ -61,7 +65,8 @@ Use the simplest tool that meets the real need: low power, low part count,
 fixable by one person in their own workshop, and taking its cues from how nature
 already solves the problem. You should be able to see how it works — no black
 boxes, ours included. AI is a tool here, not the point: prefer small and local
-models, and always show the working.
+models, prefer models whose training data was obtained with consent as far as
+we can tell, and always show the working.
 **In the platform:** agents default to small/local models and cached results;
 heavier compute is justified per job and its energy logged; every agent output
 carries its reasoning and its sources.
@@ -79,9 +84,11 @@ exportable store with a license, provenance, and enough detail to reproduce.
 ### 6. Nothing radical is out of reach
 If it is inaccessible to the poor, it is neither radical nor revolutionary. A
 project has to be reachable across income, body, language, tools, and skill, and
-it should dismantle hierarchies of race, class, gender, and ability rather than
-quietly route around them. That care extends to the maker: their health, their
-safety, and their attention are part of the design.
+it should work against hierarchies of race, class, gender, and ability rather
+than quietly route around them. The same care extends to the people doing the
+work: their health, safety, and attention are part of the design, and the AI
+here is meant to strengthen the hand of makers and repairers, not to replace
+them.
 **In the platform:** build plans state cost, required PPE and ventilation,
 tools, skill level, and time honestly; accessibility gaps are named in the
 review, not left for the builder to hit later.
@@ -89,19 +96,24 @@ review, not left for the builder to hit later.
 ### 7. No chokepoints
 Horizontal, decentralized, multi-player. No single authority — human or machine
 — sits between a person and the work. Agents propose; people decide; the
-decisions are logged in the open. The platform runs offline on modest hardware
-and repairs itself, so no server, vendor, or gatekeeper can switch it off.
+decisions are logged in the open. The platform runs offline on modest hardware,
+repairs itself, and is safe to run: agents work with least privilege, in a
+sandbox, and cannot quietly reach the network or move your data off your
+machine. No server, vendor, or gatekeeper can switch it off.
 **In the platform:** an append-only decision log records who chose what and why;
-blessing and any irreversible action need a human checkpoint; all core features
-work with no network; jobs are resumable and idempotent; a supervisor retries,
-reroutes, and restores from verified backups.
+blessing and any irreversible action need a human checkpoint; agents run
+sandboxed and least-privilege, and a security review audits any action that
+touches the host or the network; all core features work with no network; jobs
+are resumable and idempotent; a supervisor retries, reroutes, and restores from
+verified backups.
 
 ## How principles are used
 
 - **Ideation** filters and ranks candidate projects against these principles and
   proposes the smallest intervention first.
-- **Review gates** (principle 3) turn the safety, provenance, and honest-claims
-  obligations into pass / needs-changes / block verdicts with written findings.
+- **Review gates** turn obligations into pass / needs-changes / block verdicts
+  with written findings: safety, provenance, and honest claims (principle 3),
+  and security of platform-tier actions (principle 7).
 - **Governance** changes to this document are proposed as ADRs and tagged with a
   version, so a blessed project can cite the principles it was reviewed under.
 
