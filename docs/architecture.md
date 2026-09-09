@@ -7,14 +7,13 @@
 
 | Principle | Architectural consequence |
 |---|---|
-| Local-first & resilient | Everything core works offline on modest hardware; no required central service. |
-| Self-healing | Jobs are resumable and idempotent; a supervisor retries, reroutes, restores. |
-| Humans decide | Irreversible and outward-facing actions pass through a human checkpoint. |
-| Ecological safety is a gate | Review gates are in the critical path, not optional plugins. |
-| Consent & provenance | Append-only, signed provenance ledger for materials and contributions. |
-| Open by default | Commons uses open, inspectable formats; content-addressed and exportable. |
-| Appropriate technology | Model-agnostic; prefer small/local inference; measure compute and energy. |
-| Many hands | Multi-player sessions and a shared decision log are first-class. |
+| 1 Sufficiency, then salvage | Ideation proposes the smallest intervention first; every design records disassembly and end-of-life paths. |
+| 2 Appropriate technology | Model-agnostic; prefer small/local inference; measure and log compute and energy per job. |
+| 3 Safety and provenance are gates | Review gates are in the critical path, not optional plugins; signed artifacts; append-only provenance ledger. |
+| 4 An open knowledge commons | Commons uses open, inspectable, exportable formats; content-addressed. |
+| 5 Local-first and resilient | Everything core works offline on modest hardware; jobs resumable and idempotent; supervisor retries, reroutes, restores. |
+| 6 Many hands, human judgment | Multi-player sessions and an append-only decision log are first-class; human checkpoint for irreversible actions. |
+| 7 Built with care, made to delight | Build plans state PPE / skill / time; briefs carry form-and-feeling intent. |
 
 ## Layers
 
