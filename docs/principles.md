@@ -1,8 +1,9 @@
 # SolarPhunk Core Principles
 
-> **Status:** v0 draft — derived from the Solarpunk movement and the project
-> mission. Meant to be argued with. Changes go through an ADR in
-> [`docs/adr/`](adr/) once that folder exists.
+> **Status:** v0 draft, written in the voice of a manifesto because that is the
+> tradition it comes from. Derived from the Solarpunk movement (see
+> [Sources](#sources-and-influences)) and the project mission. Argue with it.
+> Changes go through an ADR in [`docs/adr/`](adr/) once that folder exists.
 
 ## Mission
 
@@ -12,84 +13,110 @@ inventions** from old, discarded, broken, donor, or natural materials. The core
 platform is a multi-player, agentic, self-healing, secure, and environmentally
 safe set of technology solutions.
 
+## Preamble
+
+The alternatives to hope are denial and despair, and we are not interested in
+either. Solarpunk asks what a just, regenerative civilization looks like and how
+we get there from where we stand. SolarPhunk is one small answer: people and AI
+agents building real things out of what the world threw away. These seven
+principles say what we will and won't build — and they hold the platform to the
+same standard as the projects it helps make.
+
 ## The principles
 
-Seven principles. Each has a plain meaning and a **platform obligation** — how
-the software is expected to embody or enforce it.
+Each principle is followed by **In the platform:** — the obligation it places on
+the software itself.
 
-### 1. Sufficiency, then salvage
+### 1. Hope, made real
+We build our way forward, we don't only write our way forward. The deliverable
+is a small thing that works, can be repaired, and can be shared — and it should
+be beautiful, because beauty is part of what makes a future worth wanting.
+**In the platform:** every project ends in something reproducible — a bill of
+materials, a build plan, a photo of the finished thing — never a document that
+stops at intent.
+
+### 2. Sufficiency first
 The best project is often no new object. Refuse what isn't needed, repair what
-already exists, adapt what you have — and only then build. When you do build,
-start from discarded, broken, donor, or naturally abundant material; newly
-extracted or manufactured material is a last resort that must be named and
-justified. Design things to come apart without destruction and to return their
-materials to use or safely to nature.
-**Platform obligation:** ideation proposes the smallest intervention first
-(repair or adapt before build); a brief that leans on virgin material or that
-duplicates a thing that already exists is flagged and must carry a written
-rationale; every design records its disassembly and end-of-life paths.
+exists, adapt what you have, build from salvage — and only as a justified last
+resort, from new material. What we make is designed to come apart without
+destruction and to return to use or safely to the ground. We decide in
+generations, not quarters.
+**In the platform:** ideation proposes the smallest intervention before the
+largest; a brief that needs virgin material, or repeats a thing that already
+exists, is flagged and must argue for itself; every design records its
+disassembly and end-of-life paths.
 
-### 2. Appropriate technology
-Use the simplest technology that solves the problem: low power, low complexity,
-maintainable by one person in their own workshop. AI is a tool in service of the
-work, not the point of it — prefer small, local, or cached inference over
-reaching for the largest model.
-**Platform obligation:** agents default to small/local models and cached
-results; heavier compute is justified per job and its energy is logged.
+### 3. Regenerate, don't just spare
+"Less harm" is not the bar. A project should leave its place — the land, the
+water, the air, the people around it — better than it found it. Safety and
+honest provenance are hard gates: nothing toxic, stolen, or extracted through
+exploitation gets through, and no claim of "green" or "circular" ships without
+evidence, including claims about this platform.
+**In the platform:** the hazard-and-lifecycle review and the provenance review
+sit in the critical path and can block; a blessed project carries signed review
+artifacts and links every environmental claim to its data.
 
-### 3. Safety and provenance are gates
-Nothing harmful ships with a warning label. Before a project is blessed it
-passes a hazard-and-lifecycle review — toxicity, emissions, fire/electrical/
-mechanical risk, energy over lifetime, e-waste created versus diverted, effect
-on land and water — and an honest-provenance review: every material has an
-attributable, consensual source, with no theft, exploitation, or ecological
-damage, including when harvesting natural material. Claims of "green,"
-"circular," or "low-energy" — about a project or about the platform itself — are
-backed by simple, auditable evidence.
-**Platform obligation:** these reviews sit in the critical path and can block; a
-blessed project carries signed review artifacts and links every claim to its
-evidence.
+### 4. Appropriate, legible technology
+Use the simplest tool that meets the real need: low power, low part count,
+fixable by one person in their own workshop, and taking its cues from how nature
+already solves the problem. You should be able to see how it works — no black
+boxes, ours included. AI is a tool here, not the point: prefer small and local
+models, and always show the working.
+**In the platform:** agents default to small/local models and cached results;
+heavier compute is justified per job and its energy logged; every agent output
+carries its reasoning and its sources.
 
-### 4. An open knowledge commons
-Designs, code, bills of materials, build logs, review artifacts, and failures
-are shared so others can reproduce them and build on them. Knowledge is a
-commons, not an asset.
-**Platform obligation:** contributions are normalised into a shared, inspectable,
+### 5. Knowledge is a commons
+Designs, code, build logs, review artifacts, and failures are shared so anyone
+can reproduce them and build further. We favour mutual aid and the gift over
+ownership and enclosure. Methods are plural: Indigenous and non-Western
+practice, jugaad, and folk repair knowledge belong here, and are credited to
+the people and traditions they come from.
+**In the platform:** contributions are normalised into a shared, inspectable,
 exportable store with a license, provenance, and enough detail to reproduce.
 (License stance per artifact type — to be decided via ADR.)
 
-### 5. Local-first and resilient
-The platform runs offline, on modest hardware, next to the workbench. It
-degrades gracefully and repairs itself. No hard dependency on a central service
-or a single vendor.
-**Platform obligation:** all core features work with no network; jobs are
-resumable and idempotent; a supervisor retries, reroutes, and restores from
-verified backups.
+### 6. Nothing radical is out of reach
+If it is inaccessible to the poor, it is neither radical nor revolutionary. A
+project has to be reachable across income, body, language, tools, and skill, and
+it should dismantle hierarchies of race, class, gender, and ability rather than
+quietly route around them. That care extends to the maker: their health, their
+safety, and their attention are part of the design.
+**In the platform:** build plans state cost, required PPE and ventilation,
+tools, skill level, and time honestly; accessibility gaps are named in the
+review, not left for the builder to hit later.
 
-### 6. Many hands, human judgment
-The platform is multi-player by design: projects are collaborative, and
-contribution, credit, and governance are visible to everyone involved. Within
-that, agents propose and people decide — especially on safety, ethics, and
-aesthetics. Automation never removes accountability from a person.
-**Platform obligation:** a facilitator coordinates human and agent participants;
-an append-only decision log records who chose what and why; blessing, and any
-irreversible or outward-facing action, requires a human checkpoint.
-
-### 7. Built with care, made to delight
-The safety, health, and cognitive load of the people doing the building are
-designed in, and projects stay reachable across a range of bodies, budgets,
-tools, and skill levels. And the result should be good to look at and good to
-live with — craft, beauty, and how a thing makes people feel are goals on equal
-footing with function.
-**Platform obligation:** build plans state required PPE, ventilation, tools,
-skill level, and time honestly; project briefs carry intent for form and
-feeling, not only specification.
+### 7. No chokepoints
+Horizontal, decentralized, multi-player. No single authority — human or machine
+— sits between a person and the work. Agents propose; people decide; the
+decisions are logged in the open. The platform runs offline on modest hardware
+and repairs itself, so no server, vendor, or gatekeeper can switch it off.
+**In the platform:** an append-only decision log records who chose what and why;
+blessing and any irreversible action need a human checkpoint; all core features
+work with no network; jobs are resumable and idempotent; a supervisor retries,
+reroutes, and restores from verified backups.
 
 ## How principles are used
 
-- **Ideation** filters and ranks candidate projects against these principles,
-  and proposes the smallest intervention first.
+- **Ideation** filters and ranks candidate projects against these principles and
+  proposes the smallest intervention first.
 - **Review gates** (principle 3) turn the safety, provenance, and honest-claims
   obligations into pass / needs-changes / block verdicts with written findings.
 - **Governance** changes to this document are proposed as ADRs and tagged with a
   version, so a blessed project can cite the principles it was reviewed under.
+
+## Sources and influences
+
+- [A Solarpunk Manifesto](https://re-des.org/a-solarpunk-manifesto/) — ReDes /
+  Regenerative Design
+- Adam Flynn, *Solarpunk: Notes toward a manifesto* (Project Hieroglyph, 2014)
+- [Designing for Beauty, Sufficiency, and Collective Care](https://jesseturri.com/designing-for-beauty-sufficiency-and-collective-care-part-2b-what-is-solarpunk/)
+  — Jesse Turri
+- [Appropedia: Solarpunk](https://www.appropedia.org/Solarpunk) — appropriate
+  technology, DIY, repair
+- [In solarpunk cities of the future, tech follows nature's lead](https://aeon.co/essays/in-solarpunk-cities-of-the-future-tech-follows-natures-lead)
+  — Aeon
+- [Solarpunk: Refuturing our Imagination](https://www.oneearth.org/solarpunk/) —
+  One Earth (Indigenous knowledge, seventh-generation thinking)
+- Solarpunk community writing on anarchism, ecology, and justice; mutual aid and
+  horizontalism

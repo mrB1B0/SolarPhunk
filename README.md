@@ -11,7 +11,7 @@ Solarpunk movement.
 
 | Doc | What it covers |
 |---|---|
-| [docs/principles.md](docs/principles.md) | Core principles and the platform obligations they impose |
+| [docs/principles.md](docs/principles.md) | Seven principles in manifesto voice, plus the platform obligation each imposes |
 | [docs/ideas.md](docs/ideas.md) | Seed ideas to prime the Ideator, plus the idea template |
 | [docs/agent-roles.md](docs/agent-roles.md) | Agentic worker roles and the propose / gate / platform trust model |
 | [docs/architecture.md](docs/architecture.md) | Target platform architecture, data model, and phased roadmap |

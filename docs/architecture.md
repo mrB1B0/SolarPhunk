@@ -7,13 +7,13 @@
 
 | Principle | Architectural consequence |
 |---|---|
-| 1 Sufficiency, then salvage | Ideation proposes the smallest intervention first; every design records disassembly and end-of-life paths. |
-| 2 Appropriate technology | Model-agnostic; prefer small/local inference; measure and log compute and energy per job. |
-| 3 Safety and provenance are gates | Review gates are in the critical path, not optional plugins; signed artifacts; append-only provenance ledger. |
-| 4 An open knowledge commons | Commons uses open, inspectable, exportable formats; content-addressed. |
-| 5 Local-first and resilient | Everything core works offline on modest hardware; jobs resumable and idempotent; supervisor retries, reroutes, restores. |
-| 6 Many hands, human judgment | Multi-player sessions and an append-only decision log are first-class; human checkpoint for irreversible actions. |
-| 7 Built with care, made to delight | Build plans state PPE / skill / time; briefs carry form-and-feeling intent. |
+| 1 Hope, made real | Every project run terminates in a reproducible artifact set (BOM, build plan, photos), not just a brief. |
+| 2 Sufficiency first | Ideation proposes the smallest intervention first; every design records disassembly and end-of-life paths. |
+| 3 Regenerate, don't just spare | Safety + provenance reviews are in the critical path and can block; signed artifacts; every claim linked to evidence. |
+| 4 Appropriate, legible technology | Model-agnostic; prefer small/local inference; log compute and energy; every agent output carries its reasoning and sources. |
+| 5 Knowledge is a commons | Commons uses open, inspectable, exportable formats; content-addressed; license + provenance per contribution. |
+| 6 Nothing radical is out of reach | Build plans state cost / PPE / skill / time; accessibility gaps are surfaced in the review. |
+| 7 No chokepoints | Decentralized, offline-first, self-healing; append-only decision log; human checkpoint for irreversible actions; no vendor lock-in. |
 
 ## Layers
 
